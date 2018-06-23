@@ -7,9 +7,9 @@ underlying statistical computing environment, but using R alone is no
 fun. RStudio is a graphical integrated development environment (IDE) that makes
 using R much easier and more interactive. You need to install R before you
 install RStudio. After installing both programs, you will need to install the
-**`tidyverse`** package from within RStudio. Follow the instructions below for
+**`cgdsr`** package from within RStudio. Follow the instructions below for
 your operating system, and then follow the instructions to install
-**`tidyverse`** and **`RSQLite`**.
+**`cgdsr`** and **`GenomicDataCommons`**.
 
 #### Windows
 
@@ -87,8 +87,10 @@ your operating system, and then follow the instructions to install
 
 #### For everyone
 
-**After installing R and RStudio, you need to install the `tidyverse` and
-`RSQLite` packages.**
+**After installing R and RStudio, you need to install the `cgdsr` and
+`GenomeDataCommons` packages.**
 
-* After starting RStudio, at the console type:
-  `install.packages(c("tidyverse", "RSQLite"))`
+* After starting RStudio, at the console type: \
+  `install.packages(c("cgdsr"))` \
+  `source('https://bioconductor.org/biocLite.R')`  \
+  `biocLite('GenomicDataCommons')`
