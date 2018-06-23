@@ -94,3 +94,7 @@ your operating system, and then follow the instructions to install
   `install.packages(c("cgdsr"))` \
   `source('https://bioconductor.org/biocLite.R')`  \
   `biocLite('GenomicDataCommons')`
+  
+* In case you see the following message 
+  `Update all/some/none? [a/s/n]:` \
+  type **n**
