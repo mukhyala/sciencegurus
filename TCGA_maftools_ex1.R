@@ -1,5 +1,5 @@
 library(TCGAbiolinks)
-luad.maf <- GDCquery_Maf("LUAD", pipelines = "muse")
+luad.maf <- GDCquery_Maf("LUAD", pipelines = "mutect2")
 luad <- read.maf(maf=luad.maf)
 luad
 getSampleSummary(luad)
