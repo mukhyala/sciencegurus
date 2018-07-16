@@ -1,4 +1,5 @@
 library(TCGAbiolinks)
+library(maftools)
 luad.maf <- GDCquery_Maf("PAAD", pipelines = "mutect2")
 luad <- read.maf(maf=luad.maf)
 luad
