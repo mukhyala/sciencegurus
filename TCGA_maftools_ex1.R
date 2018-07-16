@@ -1,10 +1,10 @@
 library(TCGAbiolinks)
 library(maftools)
-luad.maf <- GDCquery_Maf("PAAD", pipelines = "mutect2")
-luad <- read.maf(maf=luad.maf)
-luad
-getSampleSummary(luad)
-getGeneSummary(luad)
-plotmafSummary(maf = luad, rmOutlier = TRUE, addStat = 'median', dashboard = TRUE, titvRaw = FALSE)
-oncoplot(maf = luad, top = 10, fontSize = 12)
-oncostrip(maf = luad, genes = c('KRAS','EGFR'))
+paad.maf <- GDCquery_Maf("PAAD", pipelines = "mutect2")
+paad <- read.maf(maf=luad.maf)
+paad
+getSampleSummary(paad)
+getGeneSummary(paad)
+plotmafSummary(maf = paad, rmOutlier = TRUE, addStat = 'median', dashboard = TRUE, titvRaw = FALSE)
+oncoplot(maf = paad, top = 10, fontSize = 12)
+oncostrip(maf = paad, genes = c('KRAS','EGFR'))
