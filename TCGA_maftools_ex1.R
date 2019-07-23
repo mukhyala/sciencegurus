@@ -1,7 +1,7 @@
 library(TCGAbiolinks)
 library(maftools)
 paad.maf <- GDCquery_Maf("PAAD", pipelines = "mutect2")
-paad <- read.maf(maf=luad.maf)
+paad <- read.maf(maf=paad.maf)
 paad
 getSampleSummary(paad)
 getGeneSummary(paad)
